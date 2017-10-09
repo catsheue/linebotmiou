@@ -10,14 +10,14 @@ exports.reply = function justReply(req, res) {
         var target_albumId = "";
 
         if( msg.includes( "早安" ) ){
-            target_albumId = _IMGUR_ALBUM_ID_FOR_KEYWORD1_ ;
+            target_albumId = VGw0O ;
         }else{
             return;
         }
 
         var imgur_options = {
             method: 'GET',
-            uri: `https://api.imgur.com/3/album/${target_albumId}/images`,
+            uri: `https://api.imgur.com/3/album/VGw0O/images`,
             headers: {
               "Authorization": `Client-ID 72c00a7dbd1909c`
             },
